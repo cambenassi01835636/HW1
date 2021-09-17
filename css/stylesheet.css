@@ -1,0 +1,146 @@
+/*  File: stylesheet.css
+    GUI Assignment: Creating Your First Web Page 
+    Author: Cameron Benassi, UMass Lowell Computer Science, cameron_benassi@student.uml.edu 
+    About: This is a simple webpage to showcase a little bit of information about me, along 
+    with some simple practice with HTML & CSS. This page includes the CSS styling for the 
+    HTML page. */
+
+
+/* Font */
+* {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1JlFd2JQEl8qw.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Background Color */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(57, 81, 95);
+    color: white;
+    position: relative;
+
+}
+
+/* Top Nav Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Name in Top Left */
+.logo {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 2%;
+}
+
+/* Links in Top Left */
+.nav-links {
+    text-align: right;
+    background: rgb(255, 122, 89);
+    padding: 10px 30px;
+    border-bottom-left-radius: 18px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+/* Background for Name in Top Left */
+.left-sideBar {
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgb(255, 122, 89);
+    border-bottom-right-radius: 18px;
+}
+
+/* Text in Center & Image */
+.row {
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 2.5%;
+}
+
+.row img {
+    border: 5px solid rgb(51, 51, 51);
+}
+
+.left-col {
+    flex-basis: 40%;
+}
+
+.right-col {
+    flex-basis: 55%;
+    background: rgb(255, 122, 89);
+
+    text-align: center;
+
+    border-collapse: collapse;
+
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+}
+
+/* Table of Programming Languages */
+.right-col table {
+
+    color: rgb(51, 51, 51);
+    text-align: left;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right-col table td:nth-child(2) {
+    text-align: center;
+}
+
+.right-col h1 {
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.right-col p {
+    color: rgb(51, 51, 51);
+    margin: 20px;
+    margin-left: 0;
+}
+
+.left-col img {
+    width: 65%;
+    height: 65%;
+}
